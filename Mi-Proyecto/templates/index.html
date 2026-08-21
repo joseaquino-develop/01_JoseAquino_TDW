@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Proyecto TDW</title>
+
+    <!-- Tailwind CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/output.css') }}"
+    >
+
+</head>
+
+
+<body class="bg-slate-100 min-h-screen">
+
+
+    <!-- ========================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ========================================== -->
+
+    <header class="bg-blue-700 text-white py-8 shadow-lg">
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+
+            <h1 class="text-4xl md:text-5xl font-bold">
+                Tecnología Digital Web
+            </h1>
+
+            <p class="mt-3 text-blue-100 text-lg">
+                Proyecto Flask + Tailwind CSS + JavaScript
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================== -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- ========================================== -->
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+
+
+        <!-- PRESENTACIÓN -->
+
+        <section class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                Reto de implementación Web
+            </h2>
+
+            <p class="text-gray-600 text-lg">
+                Esta página fue desarrollada utilizando
+                Python, Flask, HTML, Tailwind CSS y JavaScript.
+            </p>
+
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- ACCIÓN 1 -->
+        <!-- ========================================== -->
+
+        <section class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+
+            <div class="flex items-center gap-3 mb-4">
+
+                <span class="text-3xl">
+                    💬
+                </span>
+
+                <h2 class="text-2xl font-bold text-gray-800">
+                    1. Mostrar un mensaje
+                </h2>
+
+            </div>
+
+
+            <p class="text-gray-600 mb-5">
+                JavaScript modifica el contenido de un elemento
+                del DOM.
+            </p>
+
+
+            <button
+                id="btnMensaje"
+                class="bg-blue-600 hover:bg-blue-700
+                       text-white font-semibold
+                       px-6 py-3 rounded-lg
+                       transition duration-300">
+
+                Mostrar mensaje
+
+            </button>
+
+
+            <p
+                id="mensaje"
+                class="hidden mt-5 bg-green-100
+                       text-green-700 p-4 rounded-lg
+                       font-semibold">
+
+            </p>
+
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- ACCIÓN 2 -->
+        <!-- ========================================== -->
+
+        <section class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+
+            <div class="flex items-center gap-3 mb-4">
+
+                <span class="text-3xl">
+                    ✏️
+                </span>
+
+                <h2 class="text-2xl font-bold text-gray-800">
+                    2. Cambiar contenido
+                </h2>
+
+            </div>
+
+
+            <p
+                id="contenido"
+                class="text-gray-600 text-lg mb-5">
+
+                Este es el contenido original.
+
+            </p>
+
+
+            <button
+                id="btnContenido"
+                class="bg-green-600 hover:bg-green-700
+                       text-white font-semibold
+                       px-6 py-3 rounded-lg
+                       transition duration-300">
+
+                Cambiar contenido
+
+            </button>
+
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- ACCIÓN 3 -->
+        <!-- ========================================== -->
+
+        <section class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+
+            <div class="flex items-center gap-3 mb-4">
+
+                <span class="text-3xl">
+                    🎨
+                </span>
+
+                <h2 class="text-2xl font-bold text-gray-800">
+                    3. Modificar un estilo
+                </h2>
+
+            </div>
+
+
+            <p class="text-gray-600 mb-5">
+
+                JavaScript modifica las clases de
+                Tailwind CSS para cambiar el estilo
+                de un elemento.
+
+            </p>
+
+
+            <!-- CAJA QUE CAMBIARÁ DE ESTILO -->
+
+            <div
+                id="caja"
+                class="bg-purple-500 text-white
+                       p-8 rounded-xl text-center
+                       font-bold text-xl
+                       transition-all duration-500">
+
+                Esta caja cambiará de estilo
+
+            </div>
+
+
+            <button
+                id="btnEstilo"
+                class="mt-5 bg-purple-700
+                       hover:bg-purple-800
+                       text-white font-semibold
+                       px-6 py-3 rounded-lg
+                       transition duration-300">
+
+                Cambiar estilo
+
+            </button>
+
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- TECNOLOGÍAS -->
+        <!-- ========================================== -->
+
+        <section
+            class="bg-blue-50 border border-blue-200
+                   rounded-2xl p-8">
+
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">
+                Tecnologías utilizadas
+            </h2>
+
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+
+
+                <div
+                    class="bg-white p-4 rounded-lg
+                           text-center shadow">
+
+                    <p class="font-semibold">
+                        Python
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-white p-4 rounded-lg
+                           text-center shadow">
+
+                    <p class="font-semibold">
+                        Flask
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-white p-4 rounded-lg
+                           text-center shadow">
+
+                    <p class="font-semibold">
+                        HTML
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-white p-4 rounded-lg
+                           text-center shadow">
+
+                    <p class="font-semibold">
+                        Tailwind CSS
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-white p-4 rounded-lg
+                           text-center shadow">
+
+                    <p class="font-semibold">
+                        JavaScript
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================== -->
+    <!-- PIE DE PÁGINA -->
+    <!-- ========================================== -->
+
+    <footer class="bg-gray-800 text-white py-6">
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+
+            <p>
+                Tecnología Digital Web - Proyecto Académico
+            </p>
+
+            <p class="text-gray-400 text-sm mt-2">
+                Flask + Tailwind CSS + JavaScript
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================== -->
+
+    <script
+        src="{{ url_for('static', filename='js/main.js') }}">
+    </script>
+
+
+</body>
+
+</html>
