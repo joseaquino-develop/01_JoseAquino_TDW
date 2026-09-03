@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slider | Flask</title>
+
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/styles.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="contenedor navbar-contenido">
+
+            <a href="#" class="logo">
+                SLIDER
+            </a>
+
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#slider">Slider</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- SLIDER -->
+    <main id="inicio">
+
+        <section class="slider" id="slider">
+
+            <div class="slides">
+
+                <!-- IMAGEN 1 -->
+                <div class="slide activo">
+                    <img
+                        src="{{ url_for('static', filename='img/imagen01.jpg') }}"
+                        alt="Imagen 1"
+                    >
+                </div>
+
+
+                <!-- IMAGEN 2 -->
+                <div class="slide">
+                    <img
+                        src="{{ url_for('static', filename='img/imagen02.jpg') }}"
+                        alt="Imagen 2"
+                    >
+                </div>
+
+
+                <!-- IMAGEN 3 -->
+                <div class="slide">
+                    <img
+                        src="{{ url_for('static', filename='img/imagen03.jpg') }}"
+                        alt="Imagen 3"
+                    >
+                </div>
+
+
+                <!-- IMAGEN 4 -->
+                <div class="slide">
+                    <img
+                        src="{{ url_for('static', filename='img/imagen04.jpg') }}"
+                        alt="Imagen 4"
+                    >
+                </div>
+
+
+                <!-- IMAGEN 5 -->
+                <div class="slide">
+                    <img
+                        src="{{ url_for('static', filename='img/imagen05.jpg') }}"
+                        alt="Imagen 5"
+                    >
+                </div>
+
+
+                <!-- IMAGEN 6 -->
+                <div class="slide">
+                    <img
+                        src="{{ url_for('static', filename='img/imagen06.jpg') }}"
+                        alt="Imagen 6"
+                    >
+                </div>
+
+
+                <!-- IMAGEN 7 -->
+                <div class="slide">
+                    <img
+                        src="{{ url_for('static', filename='img/imagen07.jpg') }}"
+                        alt="Imagen 7"
+                    >
+                </div>
+
+
+                <!-- IMAGEN 8 -->
+                <div class="slide">
+                    <img
+                        src="{{ url_for('static', filename='img/imagen08.jpg') }}"
+                        alt="Imagen 8"
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- TÍTULO CENTRAL -->
+            <div class="contenido-slider">
+
+                <span>GALERÍA</span>
+
+                <h1>SLIDER</h1>
+
+                <p>
+                    Galería interactiva desarrollada con
+                    Flask, HTML, CSS, Tailwind CSS v4
+                    y JavaScript.
+                </p>
+
+            </div>
+
+
+            <!-- BOTÓN ANTERIOR -->
+            <button
+                id="anterior"
+                class="control control-izquierda"
+                aria-label="Imagen anterior"
+            >
+                &#10094;
+            </button>
+
+
+            <!-- BOTÓN SIGUIENTE -->
+            <button
+                id="siguiente"
+                class="control control-derecha"
+                aria-label="Imagen siguiente"
+            >
+                &#10095;
+            </button>
+
+
+            <!-- CONTADOR -->
+            <div class="contador">
+
+                <span id="slideActual">01</span>
+
+                <span>/</span>
+
+                <span id="totalSlides">08</span>
+
+            </div>
+
+
+            <!-- INDICADORES -->
+            <div
+                id="indicadores"
+                class="indicadores"
+            ></div>
+
+
+            <!-- PAUSA -->
+            <button
+                id="autoplay"
+                class="autoplay"
+                aria-label="Pausar slider"
+            >
+                ❚❚
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script
+        src="{{ url_for('static', filename='js/carrusel.js') }}"
+    ></script>
+
+</body>
+
+</html>
